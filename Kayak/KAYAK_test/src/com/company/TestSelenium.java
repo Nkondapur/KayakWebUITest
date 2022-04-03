@@ -34,7 +34,7 @@ public class TestSelenium {
         driver.findElement(By.xpath("//span[@class=\"JyN0-name\"]")).click();
         driver.findElement(By.xpath("//button[contains(@class,'Iqt3-mod-animation-search')]")).click();
 
-        //Scroll to an element
+        //Scroll to an element and select Max price as 1600 CHF
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath("//h3[text()=\"Dauer\"]")));
 
